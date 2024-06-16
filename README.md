@@ -62,5 +62,3 @@ Primeira pasta criada, tem como objetivo revisar os conteúdos de POO enquanto a
 - **Reflexão:** Regularmente, reserve um tempo para refletir sobre o que está funcionando e o que não está. Ajuste sua abordagem conforme necessário para maximizar o aprendizado e o crescimento.
 
 Com estas regras e princípios, tu estas pronto para começar o desafio. Lembre-se de que a jornada é tão importante quanto o destino, então precisamos celebrar nossos checkpoints:
-# 200DaysCoding
-Repositório de Estudos BackEnd com Java.
