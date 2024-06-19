@@ -1,0 +1,9 @@
+Anotações a serem feitas sobre o curso de Spring:
+
+Anotações para estudar:
+- @RestController
+- @RequestMapping
+- @GetMapping
+- @Service
+- @Component
+- @Repository
