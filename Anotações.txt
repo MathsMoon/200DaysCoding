@@ -7,3 +7,11 @@ Anotações para estudar:
 - @Service
 - @Component
 - @Repository
+- @AllArgsConstructor
+- @RequiredArgsConstructor
+- @Configuration
+
+
+Conceitos para estudar:
+- Pesquisar sobre Injeção de Dependências.
+- Pesquisar sobre HotSwap.

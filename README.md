@@ -15,10 +15,13 @@ Este é o segundo desafio do desafio dos 100 dias, vou sempre renovar a cada fim
 ### 1. SRC
 Pasta principal que concentra todas as outras pastas do meu estudo, destaco principalmente nesta pasta o Diário de Programação que contém tudo que tenho feito durante os 100 dias. Destaco também o arquivo de Anotações que criei para descrever métodos, ideias, funções e conceitos importantes, tanto para rever como para estudar também. 
 
-Dentro da Source vulgo src existem as pastas com tópicos separados de acordo com o conteúdo da pasta. eu criei por exemplo as Pastas: POO_Java, Spring, Hibernate_JPA e etc. Abaixo eu explico cada pasta separadamente detalhando meu processo de estudo e como fui organizando para ter um bom proveito deste desafio.
+Dentro da Source vulgo src existem as pastas com tópicos separados de acordo com o conteúdo da pasta. eu criei por exemplo as Pastas: JDBCRevision, Spring, Hibernate_JPA e etc. Abaixo eu explico cada pasta separadamente detalhando meu processo de estudo e como fui organizando para ter um bom proveito deste desafio.
 
-### 2. POO_Java
+### 2. JDBCRevision
 Primeira pasta criada, tem como objetivo revisar os conteúdos de POO enquanto avanço para melhorar minha base de conhecimento, como também será minha área de testes para testar códigos para desenvolver mais rapidamente os projetos que eu estiver estudando.
+
+### 3. SpringBoot
+
 
 ---
 
