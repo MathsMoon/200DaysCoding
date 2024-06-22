@@ -15,3 +15,5 @@ Anotações para estudar:
 Conceitos para estudar:
 - Pesquisar sobre Injeção de Dependências.
 - Pesquisar sobre HotSwap.
+- Pesquisar sobre EndPoints Spring.
+- Pesquisar sobre Response Entity.

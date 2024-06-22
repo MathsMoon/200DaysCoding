@@ -1,16 +1,11 @@
 package SpringBoot.Dominio;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
-@Setter
-@Getter
+@Data
+@AllArgsConstructor
 public class Anime {
+    private Long ID;
     private String Name;
-
-    public Anime(String name) {
-        Name = name;
-    }
-
-    public Anime(){}
 }
