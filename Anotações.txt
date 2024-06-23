@@ -10,6 +10,11 @@ Anotações para estudar:
 - @AllArgsConstructor
 - @RequiredArgsConstructor
 - @Configuration
+- @PostMapping
+- @PathVariable
+- @RequestBody
+- @JsonProperty
+- @ResponseStatus
 
 
 Conceitos para estudar:
@@ -17,3 +22,8 @@ Conceitos para estudar:
 - Pesquisar sobre HotSwap.
 - Pesquisar sobre EndPoints Spring.
 - Pesquisar sobre Response Entity.
+- Pesquisar sobre Requisições Posting.
+- Pesquisar sobre BLOBs e CLOBs (Banco de Dados).
+
+Coisas para fazer:
+- Terminar o Crud básico para o JDBC Revision.
