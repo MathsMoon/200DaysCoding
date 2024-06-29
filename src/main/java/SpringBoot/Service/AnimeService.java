@@ -5,39 +5,41 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 @Service
 public class AnimeService {
-    private static List<Anime> animeList;
+    private static List<Anime> animes;
 
     static {
-        animeList = List.of(
-                new Anime(1L, "Masamune-kun"),
-                new Anime(2L,"Tsuki ga Kirei"),
-                new Anime(3L,"Jojo"),
-                new Anime(4L,"Shinigami Bocchan"),
-                new Anime(5L,"Your Lie in April"));
+        animes = new ArrayList<>(
+                List.of(
+                        new Anime(1L, "Shinigami Bocchan"),
+                        new Anime(2L, "One Piece"),
+                        new Anime(3L, "Jojo"),
+                        new Anime(4L, "Nisekoi"),
+                        new Anime(5L, "Tsuki ga Kirei")
+                ));
     }
 
-    //Futuramente implementaremos a interface própria do AnimeRepo.
-    public List<Anime> listAll(){
-        return animeList;
+    // private final AnimeRepository animeRepository;
+    public List<Anime> listAll() {
+        return animes;
     }
 
-    //Realizando pesquisa pelo ID do anime:
-    public Anime findByID(Long ID){
-        return animeList.
-                stream().
-                filter(a -> a.getID() == ID).
-                findFirst().
-                orElseThrow(() -> new ResponseStatusException(HttpStatus.BAD_REQUEST, "Anime not found!"));
+    public Anime findById(long id) {
+        return animes.stream()
+                .filter(anime -> anime.getID().equals(id))
+                .findFirst()
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.BAD_REQUEST, "Anime not Found"));
     }
 
+    //O ID se repete após o fim dos 4 IDs Criados.
     public Anime save(Anime anime) {
-        anime.setID(ThreadLocalRandom.current().nextLong(6, 10));
-        animeList.add(anime);
+        anime.setID(ThreadLocalRandom.current().nextLong(6,10));
+        animes.add(anime);
         return anime;
     }
 }

@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("animes")
 @Log4j2
-@RequiredArgsConstructor //Necessita todos os parâmetros como Final.
+@RequiredArgsConstructor
 public class AnimeController {
     private final DateUtil dateUtil;
     private final AnimeService animeService;
@@ -23,18 +23,21 @@ public class AnimeController {
     @GetMapping
     public ResponseEntity<List<Anime>> list(){
         log.info(dateUtil.formatLocalDateTimeToDataBaseStyle(LocalDateTime.now()));
-        return new ResponseEntity<>(animeService.listAll(), HttpStatus.OK);
+        return ResponseEntity.ok(animeService.listAll());
     }
 
-    //Para acessar outra função já linkada pelo getMapping é necessário um path relativo a função, por exemplo:
     @GetMapping(path = "/{id}")
-    public ResponseEntity<Anime> findByID(@PathVariable Long id){
-        log.info("Retornando anime pelo ID");
-        return ResponseEntity.ok(animeService.findByID(id));
+    public ResponseEntity<Anime> findById(@PathVariable long id){
+        return ResponseEntity.ok(animeService.findById(id));
     }
 
     @PostMapping
     public ResponseEntity<Anime> save(@RequestBody Anime anime){
         return new ResponseEntity<>(animeService.save(anime), HttpStatus.CREATED);
     }
+
+//    @DeleteMapping
+//    public ResponseEntity<void> delete(@PathVariable long id){
+//        return ResponseEntity.noContent();
+//    }
 }
